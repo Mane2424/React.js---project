@@ -1,0 +1,33 @@
+@import "src/assets/index";
+
+.item {
+  width: 100%;
+  background: $primary-100;
+  padding: 15px 25px;
+  border-radius: 16px;
+  color: $primary-300;
+  cursor: pointer;
+
+  @include flexbox($justifyContent: space-between, $alignItems: center);
+
+  &_imgBox {
+    text-align: center;
+    @include flexbox( $justifyContent: center, $alignItems:center, $gap: 5px);
+  }
+
+  &_content {
+    @include flexbox($justifyContent: space-between, $alignItems: flex-start, $gap: 20px);
+
+    &_box {
+      width: 130px;
+      text-align: center;
+      @include flexbox($direction: column, $justifyContent: center, $alignItems: center, $gap: 8px);
+    }
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,12 @@
+@import "src/assets";
+
+.main {
+  min-width: 600px;
+  min-height: 300px;
+
+  @include flexbox($direction: column, $gap: 20px, $alignItems: center);
+
+  &_select {
+    width: 300px;
+  }
+}

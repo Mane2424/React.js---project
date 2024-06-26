@@ -1,0 +1,143 @@
+.text-decoration {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.text-decoration-md {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.text-decoration-sb {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+//Regular
+.text-sm {
+  font-size: 12px;
+  line-height: 16px;
+  @extend .text-decoration;
+}
+
+.text-base {
+  font-size: 14px;
+  line-height: 20px;
+  @extend .text-decoration;
+}
+
+.text-lg {
+  font-size: 16px;
+  line-height: 24px;
+  @extend .text-decoration;
+}
+
+.text-xl {
+  font-size: 18px;
+  line-height: 26px;
+  @extend .text-decoration;
+}
+
+.text-2xl {
+  font-size: 20px;
+  line-height: 28px;
+  @extend .text-decoration;
+}
+
+.text-3xl {
+  font-size: 24px;
+  line-height: 32px;
+  @extend .text-decoration;
+}
+
+.text-4xl {
+  font-size: 32px;
+  line-height: 36px;
+  @extend .text-decoration;
+}
+
+//Medium
+.text-sm-md {
+  font-size: 12px;
+  line-height: 16px;
+  @extend .text-decoration-md;
+}
+
+.text-base-md {
+  font-size: 14px;
+  line-height: 20px;
+  @extend .text-decoration-md;
+}
+
+.text-lg-md {
+  font-size: 16px;
+  line-height: 24px;
+  @extend .text-decoration-md;
+}
+
+.text-xl-md {
+  font-size: 18px;
+  line-height: 26px;
+  @extend .text-decoration-md;
+}
+
+.text-2xl-md {
+  font-size: 20px;
+  line-height: 28px;
+  @extend .text-decoration-md;
+}
+
+.text-3xl-md {
+  font-size: 24px;
+  line-height: 32px;
+  @extend .text-decoration-md;
+}
+
+.text-4xl-md {
+  font-size: 32px;
+  line-height: 36px;
+  @extend .text-decoration-md;
+}
+
+//SemiBold
+.text-sm-sb {
+  font-size: 12px;
+  line-height: 16px;
+  @extend .text-decoration-sb;
+}
+
+.text-base-sb {
+  font-size: 14px;
+  line-height: 20px;
+  @extend .text-decoration-sb;
+}
+
+.text-lg-sb {
+  font-size: 16px;
+  line-height: 24px;
+  @extend .text-decoration-sb;
+}
+
+.text-xl-sb {
+  font-size: 18px;
+  line-height: 26px;
+  @extend .text-decoration-sb;
+}
+
+.text-2xl-sb {
+  font-size: 20px;
+  line-height: 28px;
+  @extend .text-decoration-sb;
+}
+
+.text-3xl-sb {
+  font-size: 24px;
+  line-height: 32px;
+  @extend .text-decoration-sb;
+}
+
+.text-4xl-sb {
+  font-size: 32px;
+  line-height: 36px;
+  @extend .text-decoration-sb;
+}

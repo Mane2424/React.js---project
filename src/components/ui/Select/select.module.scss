@@ -1,0 +1,82 @@
+@import "src/assets/index";
+
+
+.dropdown {
+  margin: 0 auto;
+  z-index: 10000;
+  width: 100%;
+  position: relative;
+
+  &-disabled {
+    color: $primary-200!important;
+  }
+
+  &-title {
+    color: $secondary-600;
+  }
+
+  * {
+    z-index: 10;
+  }
+
+  .dropdown-btn {
+    cursor: pointer;
+    background: $primary-100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    color: $secondary-800;
+    font-weight: 500;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.dropdown-content {
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 100%;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.07);
+  transition: 500ms;
+  overflow: hidden;
+  background: $primary-300;
+
+  .item {
+    padding: 10px;
+    cursor: pointer;
+    transition: 200ms;
+
+    &:hover {
+      background: $secondary-400;
+      color: $primary-300;
+      transition: 200ms;
+    }
+  }
+
+  &-height {
+    overflow-y: scroll;
+    transition: 500ms;
+  }
+}
+
+.rotateDown {
+  @include flexbox($alignItems: center, $justifyContent: center);
+  height: max-content;
+  width: max-content;
+  transform: rotate(180deg);
+  transition: 500ms;
+}
+
+.rotateUp {
+  @include flexbox($alignItems: center, $justifyContent: center);
+  height: max-content;
+  width: max-content;
+  transform: rotate(0deg);
+  transition: 500ms;
+}

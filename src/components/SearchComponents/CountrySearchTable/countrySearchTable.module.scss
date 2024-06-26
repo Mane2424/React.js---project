@@ -1,0 +1,55 @@
+@import "src/assets/index";
+
+.main {
+  @include flexbox($direction: column, $gap: 15px)
+}
+
+.wrapper {
+  @include flexbox($direction: column, $gap: 15px)
+}
+
+.userBox {
+  @include flexbox($direction: column, $gap: 20px);
+
+  button {
+    z-index: 1000;
+  }
+
+  &_box {
+    max-height: 500px;
+    overflow-y: auto;
+    position: relative;
+
+
+    &_shadow {
+      position: relative;
+      max-height: 500px;
+
+      &_top {
+        position: absolute;
+        border-top-right-radius: 10px;
+        left: 0;
+        height: 20px;
+        width: 100%;
+        color: transparent;
+        z-index: 1; /* Ensure shadows are above content */
+        top: 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent); /* Gradient shadow at top */
+      }
+
+      &_bottom {
+        position: absolute;
+        border-bottom-right-radius: 10px;
+        left: 0;
+        height: 20px;
+        width: 100%;
+        color: transparent;
+        z-index: 1; /* Ensure shadows are above content */
+        bottom: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent); /* Gradient shadow at bottom */
+      }
+    }
+
+    @include flexbox($direction: column, $gap: 15px);
+  }
+}

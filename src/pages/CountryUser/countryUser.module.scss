@@ -1,0 +1,21 @@
+@import "src/assets/index";
+
+.countryUser {
+  position: relative;
+  width: 100%;
+
+  @include flexbox($alignItems: center, $direction: column, $gap: 35px);
+
+  &_goBack {
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    cursor: pointer;
+  }
+
+  &_loader {
+    height: 4px;
+    width: 100%;
+    position: fixed;
+  }
+}

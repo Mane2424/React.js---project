@@ -1,0 +1,40 @@
+@import "src/assets/index";
+
+.iconWrapper {
+  border: 2px solid $secondary-400;
+  color: $secondary-900;
+  padding: 8px;
+  border-radius: 12px;
+  @include flexbox($gap: 15px, $alignItems: center)
+}
+
+.wrapper {
+  @include flexbox($direction: column, $gap: 5px);
+
+  span {
+    @extend .text-base;
+  }
+
+  input {
+    appearance: none;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+      color: $secondary-400;
+    }
+  }
+
+  &:disabled {
+    border: 2px solid $secondary-100;
+    color: $secondary-100;
+  }
+
+  &_error {
+    border: 2px solid $red-1;
+    background-color: $red-3;
+
+  }
+}

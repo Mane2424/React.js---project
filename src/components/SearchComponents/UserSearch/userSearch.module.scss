@@ -1,0 +1,15 @@
+@import "src/assets/index";
+
+.main {
+  width: 100%;
+  @include flexbox($direction: column, $gap: 15px, $alignItems: center);
+
+  &_searchBox {
+    width: 100%;
+    @include flexbox($gap: 20px, $alignItems: center, $justifyContent:center);
+  }
+
+  &_select {
+    width: 300px;
+  }
+}
